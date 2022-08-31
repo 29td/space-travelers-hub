@@ -1,0 +1,33 @@
+.mission_table {
+  display: grid;
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+.btn-mission-Leave {
+  white-space: nowrap;
+  text-align: center;
+  color: red;
+  border: 1px solid red;
+}
+
+.btn-mission-Leave:hover {
+  color: white;
+  background-color: red;
+  border: 1px solid red;
+}
+
+.btn-mission-Join {
+  white-space: nowrap;
+  text-align: center;
+  color: green;
+  border: 1px solid green;
+}
+
+.btn-mission-Join:hover {
+  color: white;
+  background-color: green;
+  border: 1px solid green;
+}
