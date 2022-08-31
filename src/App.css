@@ -20,8 +20,16 @@
   padding: 6px;
 }
 
-.nav-links li a {
+.nav-links li .link {
   text-decoration: none;
+}
+
+.nav-links li .link:hover {
+  text-decoration: underline;
+}
+
+.nav-links li .link-active {
+  text-decoration: underline;
 }
 
 .navLogo {
@@ -30,3 +38,4 @@
   height: auto;
   padding: 0 2% 0 2%;
 }
+
