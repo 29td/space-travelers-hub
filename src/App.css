@@ -54,6 +54,42 @@ body {
 .profile-flex {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2%;
   padding: 2% 3% 0 6%;
+  gap: 1.5%;
+}
+
+.profile-fle {
+  width: 100%;
+}
+
+.profile-1 {
+  border: 2px solid #ddd;
+  align-items: center;
+  height: auto;
+  overflow: hidden;
+}
+
+.profile-2 {
+  border: 2px solid #ddd;
+  align-items: center;
+  height: auto;
+}
+
+.profile-title {
+  text-align: center;
+  font-size: x-large;
+  padding: 1vw;
+  background-color: #ddd;
+}
+
+.profile-item {
+  width: 85%;
+  list-style: none;
+  color: black;
+}
+
+.profile-item li {
+  padding: 1vw;
+  font-size: large;
+  border-bottom: 1px solid #ccc;
 }

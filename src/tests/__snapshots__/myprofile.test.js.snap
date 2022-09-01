@@ -4,28 +4,32 @@ exports[`renders correctly 1`] = `
 <div
   className="profile-flex"
 >
-  <div>
-    <h3>
+  <div
+    className="profile-1"
+  >
+    <h3
+      className="profile-title"
+    >
       My Rockets
     </h3>
     <div>
-      <table
-        className="styled-table"
-      >
-        <tbody />
-      </table>
+      <ul
+        className="profile-item"
+      />
     </div>
   </div>
-  <div>
-    <h3>
+  <div
+    className="profile-2"
+  >
+    <h3
+      className="profile-title"
+    >
       My Missions
     </h3>
     <div>
-      <table
-        className="styled-table"
-      >
-        <tbody />
-      </table>
+      <ul
+        className="profile-item"
+      />
     </div>
   </div>
 </div>

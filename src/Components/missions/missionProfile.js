@@ -5,18 +5,12 @@ const MissionProfile = () => {
   const missionProfile = useSelector((state) => state.missions);
   const reservedMissions = missionProfile.filter((mission) => mission.isJoined);
   const displayMissions = reservedMissions.map((mission) => (
-    <tr key={mission.mission_id}>
-      <td>
-        <p className="profile-item">{mission.mission_name}</p>
-      </td>
-    </tr>
+    <li key={mission.mission_id}>{mission.mission_name}</li>
   ));
 
   return (
     <div>
-      <table className="styled-table">
-        <tbody>{displayMissions}</tbody>
-      </table>
+      <ul className="profile-item">{displayMissions}</ul>
     </div>
   );
 };
