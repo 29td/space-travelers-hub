@@ -6,6 +6,19 @@
   border: 1px solid #ddd;
 }
 
+.head-row {
+  background-color: #ddd;
+  height: 2.4vw;
+}
+
+.row {
+  background-color: #ddd;
+}
+
+.col1 {
+  width: 20vw;
+}
+
 .btn-mission-Leave {
   white-space: nowrap;
   text-align: center;
