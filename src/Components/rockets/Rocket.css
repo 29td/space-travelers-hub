@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+}
+
+.all-rockets {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rocket-card {
+  display: flex;
+  width: 90%;
+  margin: 18px;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+}
+
+.rocket-pic {
+  width: 30%;
+  border-radius: 3px;
+}
+
+.rocket-cont {
+  width: 64%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 0 24px;
+  line-height: 1.4;
+}
+
+.rocket-title {
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.rocket-description {
+  font-size: large;
+}
+
+.reserved {
+  border: 1px solid #ccc;
+  background-color: blueviolet;
+  color: #fff;
+  padding: 2px 8px;
+  font-size: small;
+  font-weight: 600;
+  margin-right: 0.5vw;
+  border-radius: 6px;
+}
+
+.reserve-btn,
+.cancel-btn {
+  width: 12vw;
+  height: 2vw;
+  padding: 2px;
+  font-size: 1vw;
+  font-weight: 550;
+  color: #fff;
+  background-color: blueviolet;
+  border-radius: 6px;
+  border: #ccc;
+  box-shadow: rgba(0, 0, 0, 0.15) 0 3px 3px 0;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: green;
+}
