@@ -17,7 +17,7 @@ const Mission = (props) => {
     );
   };
   return (
-    <tr>
+    <tr className="row">
       <td>
         <h5>{mission.mission_name}</h5>
       </td>
