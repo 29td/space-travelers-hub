@@ -50,3 +50,10 @@ body {
 .nav-links li .link-active {
   text-decoration: underline;
 }
+
+.profile-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2%;
+  padding: 2% 3% 0 6%;
+}

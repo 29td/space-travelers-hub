@@ -1,9 +1,16 @@
-function Myprofile() {
-  return (
-    <div>
-      <h1>MyProfile</h1>
-    </div>
-  );
-}
+import MissionProfile from './missions/missionProfile';
+import RocketProfile from './rockets/rocketProfile';
 
-export default Myprofile;
+const MyProfile = () => (
+  <div className="profile-flex">
+    <div>
+      <h3>My Rockets</h3>
+      <RocketProfile />
+    </div>
+    <div>
+      <h3>My Missions</h3>
+      <MissionProfile />
+    </div>
+  </div>
+);
+export default MyProfile;
