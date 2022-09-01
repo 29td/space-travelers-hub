@@ -17,14 +17,13 @@ const Missions = () => {
 
   return (
     <div className="mission_table">
-      {' '}
       <table className="styled-table">
         <thead>
-          <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th>Join</th>
+          <tr className="head-row">
+            <th className="col1">Mission</th>
+            <th className="col2">Description</th>
+            <th className="col3">Status</th>
+            <th className="col4">Join</th>
           </tr>
         </thead>
         <tbody>
