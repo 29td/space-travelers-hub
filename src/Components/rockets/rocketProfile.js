@@ -5,18 +5,12 @@ const RocketProfile = () => {
   const rocketProfile = useSelector((state) => state.rockets);
   const reservedRockets = rocketProfile.filter((rocket) => rocket.reserved);
   const displayRockets = reservedRockets.map((rocket) => (
-    <tr key={rocket.id}>
-      <td>
-        <p className="profile-item">{rocket.name}</p>
-      </td>
-    </tr>
+    <li key={rocket.id}>{rocket.name}</li>
   ));
 
   return (
     <div>
-      <table className="styled-table">
-        <tbody>{displayRockets}</tbody>
-      </table>
+      <ul className="profile-item">{displayRockets}</ul>
     </div>
   );
 };

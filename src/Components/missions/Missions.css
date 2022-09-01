@@ -3,44 +3,96 @@
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
 }
 
-.head-row {
-  background-color: #ddd;
-  height: 2.4vw;
+thead {
+  height: 3vw;
+  color: rgb(0, 0, 145);
 }
 
-.row {
-  background-color: #ddd;
+th {
+  font-size: x-large;
 }
 
-.col1 {
-  width: 20vw;
+td {
+  min-width: 6vw;
+  padding: 1vw;
 }
 
-.btn-mission-Leave {
+tr {
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: rgba(255, 238, 255, 0.644);
+}
+
+h5 {
+  font-size: large;
+}
+
+.btn-mission-Leave,
+.btn-mission-Join {
   white-space: nowrap;
   text-align: center;
-  color: red;
-  border: 1px solid red;
+  color: black;
+  background: none;
+  font-weight: 500;
+  border: 1.5px solid #434be2;
+  width: 8vw;
+  padding: 8px;
+  margin: 1.2vw;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
 }
 
 .btn-mission-Leave:hover {
   color: white;
-  background-color: red;
-  border: 1px solid red;
+  background-color: #434be2;
+  border: 1px solid #434be2;
 }
 
 .btn-mission-Join {
-  white-space: nowrap;
-  text-align: center;
-  color: green;
-  border: 1px solid green;
+  color: #fff;
+  background-color: #434be2;
+  border: 1px solid #434be2;
 }
 
 .btn-mission-Join:hover {
   color: white;
+  background-color: #434be2;
+  border: 1px solid #434be2;
+}
+
+.btn-mission-inactive,
+.btn-mission-active {
+  text-transform: lowercase;
+  white-space: nowrap;
+  text-align: center;
+  color: black;
+  background: none;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1.5px solid green;
+  width: 6vw;
+  padding: 8px;
+  margin: 1.2vw;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 2px 5px -1px, rgba(0, 0, 0, 0.3) 0 1px 3px -1px;
+}
+
+.btn-mission-active {
   background-color: green;
-  border: 1px solid green;
+  color: #fff;
+}
+
+td p {
+  font-size: 14px;
+  text-align: justify;
+  text-justify: inter-word;
 }
