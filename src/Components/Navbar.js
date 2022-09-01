@@ -1,14 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import planet from '../assets/images/planet.png';
 
 const Navbar = () => (
   <nav className="navbar">
-    <img className="navLogo" src=".../assets/images/planet.png" alt="" />
-    <h3>Space Travelers&apos; Hub</h3>
+    <div className="title">
+      <img className="navLogo" src={planet} alt="" />
+      <h3>Space Travelers&apos; Hub</h3>
+    </div>
     <ul className="nav-links">
-      <li><Link to="./">Rockets</Link></li>
-      <li className="missionNav"><Link to="/Missions">Missions</Link></li>
-      <li><Link to="./Myprofile">My Profile</Link></li>
+      <li><NavLink to="./" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>Rockets</NavLink></li>
+      <hr />
+      <li><NavLink to="./Missions" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>Missions</NavLink></li>
+      <hr />
+      <li><NavLink to="./my-profile" className={({ isActive }) => (isActive ? 'link-active' : 'link')}>My Profile</NavLink></li>
     </ul>
   </nav>
 );
