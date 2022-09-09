@@ -15,6 +15,10 @@ This web app allows users to see available rockets for reservation and missions 
 - Vs code
 - Tesing with Jest
 
+### Live Demo Link
+
+https://t5space-travelers.netlify.app/
+
 ## Getting Started
 To get a local copy of this exercice, Please follow these simple example steps.
 
